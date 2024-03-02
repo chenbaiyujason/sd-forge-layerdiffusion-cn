@@ -132,7 +132,7 @@ class LayerDiffusionForForge(scripts.Script):
         if method in [LayerMethod.FG_ONLY_ATTN, LayerMethod.FG_ONLY_CONV, LayerMethod.BG_BLEND_TO_FG]:
             if vae_transparent_decoder is None:
                 model_path = load_file_from_url(
-                    url='https://huggingface.co/LayerDiffusion/layerdiffusion-v1/resolve/main/vae_transparent_decoder.safetensors',
+                    url='https://hf-mirror.com/LayerDiffusion/layerdiffusion-v1/resolve/main/vae_transparent_decoder.safetensors',
                     model_dir=layer_model_root,
                     file_name='vae_transparent_decoder.safetensors'
                 )
@@ -141,7 +141,7 @@ class LayerDiffusionForForge(scripts.Script):
 
             if vae_transparent_encoder is None:
                 model_path = load_file_from_url(
-                    url='https://huggingface.co/LayerDiffusion/layerdiffusion-v1/resolve/main/vae_transparent_encoder.safetensors',
+                    url='https://hf-mirror.com/LayerDiffusion/layerdiffusion-v1/resolve/main/vae_transparent_encoder.safetensors',
                     model_dir=layer_model_root,
                     file_name='vae_transparent_encoder.safetensors'
                 )
@@ -162,7 +162,7 @@ class LayerDiffusionForForge(scripts.Script):
 
         if method == LayerMethod.FG_ONLY_ATTN:
             model_path = load_file_from_url(
-                url='https://huggingface.co/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_transparent_attn.safetensors',
+                url='https://hf-mirror.com/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_transparent_attn.safetensors',
                 model_dir=layer_model_root,
                 file_name='layer_xl_transparent_attn.safetensors'
             )
@@ -171,7 +171,7 @@ class LayerDiffusionForForge(scripts.Script):
 
         if method == LayerMethod.FG_ONLY_CONV:
             model_path = load_file_from_url(
-                url='https://huggingface.co/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_transparent_conv.safetensors',
+                url='https://hf-mirror.com/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_transparent_conv.safetensors',
                 model_dir=layer_model_root,
                 file_name='layer_xl_transparent_conv.safetensors'
             )
@@ -180,7 +180,7 @@ class LayerDiffusionForForge(scripts.Script):
 
         if method == LayerMethod.BG_TO_BLEND:
             model_path = load_file_from_url(
-                url='https://huggingface.co/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_bg2ble.safetensors',
+                url='https://hf-mirror.com/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_bg2ble.safetensors',
                 model_dir=layer_model_root,
                 file_name='layer_xl_bg2ble.safetensors'
             )
@@ -190,7 +190,7 @@ class LayerDiffusionForForge(scripts.Script):
 
         if method == LayerMethod.FG_TO_BLEND:
             model_path = load_file_from_url(
-                url='https://huggingface.co/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_fg2ble.safetensors',
+                url='https://hf-mirror.com/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_fg2ble.safetensors',
                 model_dir=layer_model_root,
                 file_name='layer_xl_fg2ble.safetensors'
             )
@@ -200,7 +200,7 @@ class LayerDiffusionForForge(scripts.Script):
 
         if method == LayerMethod.BG_BLEND_TO_FG:
             model_path = load_file_from_url(
-                url='https://huggingface.co/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_bgble2fg.safetensors',
+                url='https://hf-mirror.com/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_bgble2fg.safetensors',
                 model_dir=layer_model_root,
                 file_name='layer_xl_bgble2fg.safetensors'
             )
@@ -210,7 +210,7 @@ class LayerDiffusionForForge(scripts.Script):
 
         if method == LayerMethod.FG_BLEND_TO_BG:
             model_path = load_file_from_url(
-                url='https://huggingface.co/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_fgble2bg.safetensors',
+                url='https://hf-mirror.com/LayerDiffusion/layerdiffusion-v1/resolve/main/layer_xl_fgble2bg.safetensors',
                 model_dir=layer_model_root,
                 file_name='layer_xl_fgble2bg.safetensors'
             )
